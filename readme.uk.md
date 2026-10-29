@@ -1,7 +1,7 @@
 [![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-single.svg)](https://stand-with-ukraine.pp.ua/)
 
 <p align="center">
-  <img src="./custom_components/kyiv_vodokanal/brand/logo.png" alt="Київводоканал" width="400" />
+  <img src="./custom_components/kyiv_vodokanal/brand/logo.png" alt="Київводоканал" width="100%" />
 </p>
 
 # 💧 Київводоканал для Home Assistant

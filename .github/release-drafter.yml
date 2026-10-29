@@ -1,0 +1,68 @@
+name-template: v$RESOLVED_VERSION 💧
+tag-template: v$RESOLVED_VERSION
+exclude-contributors:
+  - github-actions[bot]
+  - github-actions
+  - dependabot[bot]
+  - dependabot
+categories:
+  - title: ❗️ Breaking Changes
+    when:
+      labels:
+        - breaking
+  - title: 🚀 Features
+    when:
+      labels:
+        - feature
+        - enhancement
+  - title: 🐛 Bug Fixes
+    when:
+      labels:
+        - fix
+        - bug
+  - title: 🧰 Maintenance
+    when:
+      labels:
+        - chore
+        - dependencies
+  - type: version-resolver
+    semver-increment: major
+    when:
+      labels:
+        - major
+        - breaking
+  - type: version-resolver
+    semver-increment: minor
+    when:
+      labels:
+        - minor
+        - feature
+        - enhancement
+  - type: version-resolver
+    semver-increment: patch
+    when:
+      labels:
+        - patch
+        - dependencies
+  - type: version-resolver
+    semver-increment: patch
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+template: |
+  ## What's Changed
+
+  $CHANGES
+
+  ## ⭐️ Contributors
+
+  $CONTRIBUTORS
+
+  ## Sponsorship
+
+  If you like this project, please consider supporting me:
+
+  - 💖 [Sponsor on GitHub](https://github.com/sponsors/denysdovhan)
+  - ☕️ [Buy Me A Coffee](https://buymeacoffee.com/denysdovhan)
+  - 🤝 [Support on Patreon](https://patreon.com/denysdovhan)
+  - Bitcoin: `bc1q7lfx6de8jrqt8mcds974l6nrsguhd6u30c6sg8`
+  - Ethereum: `0x6aF39C917359897ae6969Ad682C14110afe1a0a1`

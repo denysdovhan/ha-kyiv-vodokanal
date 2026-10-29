@@ -28,6 +28,7 @@ v1 scope and Ukrainian names are defined in `docs/ha-options.md`.
 - `sensor.py` — meter and personal-account sensor descriptions and entities, with device info.
 - `diagnostics.py` — redacted config entry diagnostics.
 - `icons.json` — entity icons by `translation_key` (use instead of `icon=` in descriptions).
+- `brand/` — integration icon and logo PNGs (HA 2026.3+), rendered from SVGs in `assets/`: logos from vodokanal.kyiv.ua, icon from Wikimedia Commons (`KyivVodokanal.svg`, CC0). Re-render all PNGs after replacing them.
 - `manifest.json` — HA manifest.
 - `tests/test_parsing.py` — parser and helper tests on synthetic data (`uv run pytest`).
 

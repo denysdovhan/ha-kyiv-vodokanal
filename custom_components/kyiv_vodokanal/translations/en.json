@@ -1,0 +1,80 @@
+{
+  "title": "Kyiv Vodokanal",
+  "config": {
+    "step": {
+      "user": {
+        "description": "Sign in with your [Kyivvodokanal personal account]({portal_url}). Google sign-in is not supported.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate",
+        "description": "The password for {email} no longer works. Enter the current password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Failed to connect to Kyivvodokanal."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "unique_id_mismatch": "You signed in to a different account. Use the account this entry was set up with."
+    }
+  },
+  "device": {
+    "meter": {
+      "name": "Water meter №{number}"
+    },
+    "account": {
+      "name": "Personal account {code}"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "reading": {
+        "name": "Latest reading"
+      },
+      "period_usage": {
+        "name": "Volume"
+      },
+      "billing_period": {
+        "name": "Latest reading date"
+      },
+      "amount_to_pay": {
+        "name": "Amount to pay"
+      },
+      "unpaid_previous": {
+        "name": "Debt from previous periods"
+      },
+      "bill_amount": {
+        "name": "Charged"
+      },
+      "last_payment": {
+        "name": "Last payment"
+      },
+      "last_payment_date": {
+        "name": "Last payment date"
+      },
+      "water_supply": {
+        "name": "Water supply tariff"
+      },
+      "wastewater": {
+        "name": "Wastewater tariff"
+      },
+      "subscription_fee": {
+        "name": "Subscription fee"
+      },
+      "service_price": {
+        "name": "Service price"
+      },
+      "last_sync": {
+        "name": "Last sync"
+      }
+    }
+  }
+}

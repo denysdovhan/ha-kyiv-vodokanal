@@ -127,18 +127,21 @@ ACCOUNT_SENSORS: tuple[AccountSensorDescription, ...] = (
         key="water_supply",
         translation_key="water_supply",
         native_unit_of_measurement=PRICE_PER_CUBIC_METER,
+        suggested_display_precision=2,
         value_fn=lambda _, account: account.tariffs.get("water_supply"),
     ),
     AccountSensorDescription(
         key="wastewater",
         translation_key="wastewater",
         native_unit_of_measurement=PRICE_PER_CUBIC_METER,
+        suggested_display_precision=2,
         value_fn=lambda _, account: account.tariffs.get("wastewater"),
     ),
     AccountSensorDescription(
         key="service_price",
         translation_key="service_price",
         native_unit_of_measurement=PRICE_PER_CUBIC_METER,
+        suggested_display_precision=2,
         value_fn=lambda _, account: account.tariffs.get("service_price"),
     ),
     AccountSensorDescription(

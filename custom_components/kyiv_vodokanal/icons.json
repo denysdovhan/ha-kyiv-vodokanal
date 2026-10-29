@@ -1,0 +1,15 @@
+{
+  "entity": {
+    "sensor": {
+      "water_supply": {
+        "default": "mdi:cash-multiple"
+      },
+      "wastewater": {
+        "default": "mdi:cash-multiple"
+      },
+      "service_price": {
+        "default": "mdi:cash-multiple"
+      }
+    }
+  }
+}

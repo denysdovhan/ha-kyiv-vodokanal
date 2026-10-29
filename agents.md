@@ -27,6 +27,7 @@ v1 scope and Ukrainian names are defined in `docs/ha-options.md`.
 - `coordinator.py` — `KyivVodokanalCoordinator`, `KyivVodokanalData`, typed entry alias, and pure derived-value helpers (`unpaid_previous`, `last_payment`, `tariffs_by_key`).
 - `sensor.py` — meter and personal-account sensor descriptions and entities, with device info.
 - `diagnostics.py` — redacted config entry diagnostics.
+- `icons.json` — entity icons by `translation_key` (use instead of `icon=` in descriptions).
 - `manifest.json` — HA manifest.
 - `tests/test_parsing.py` — parser and helper tests on synthetic data (`uv run pytest`).
 
